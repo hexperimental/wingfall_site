@@ -1,0 +1,96 @@
+body{
+    font-family:Helvetica;
+background-color:rgb(60, 164, 188);
+}
+#stage{
+    height:3000px;
+}
+#dude{
+    width:200px;
+    height:200px;
+    position:fixed;
+    top:200px;
+    left:2%;
+}
+#logo{
+    height:120px;
+    width:260px;
+    position:fixed;
+    top:35px;
+    left:35px;
+}
+#cta{
+    position:fixed;
+    border:0;
+    width:135px;
+    height:40px;
+    border:1px solid black;
+    bottom:30px;
+    right:30px;
+}
+#footer{
+    height:100px;
+    width:100%;
+    top:100%;
+    color:white;
+}
+#footer div{
+    text-align:center;
+width:250px;
+    display:block;
+ margin:auto auto;
+}
+
+.section{
+    border:1px solid rgb(60, 164, 188);
+    height:600px;
+    color:white;
+}
+.footer-logo{
+    display:block;
+    margin:auto auto;
+    width:52px;
+    height:52px;
+}
+/*.section div{border:1px solid blue;}*/
+#section1 .description{
+    font-size:4.2em;
+    margin-top:300px;
+    margin-left:400px;
+}
+#section1 .caption{}
+
+#section2 .description{
+    font-size:3.2em;
+    margin-top:150px;
+    margin-left:500px;
+}
+
+#section2 .sub{
+    font-size:2.5em;
+    margin-top:250px;
+    margin-left:50px;
+    width:350px;
+}
+#section2 .caption{
+    font-size:2.5em;
+    margin-top:400px;
+    float:right;
+    width:500px;
+}
+
+
+#section3 .sub{}
+
+#section3 .description{
+    font-size:2.5em;
+    width:500px;
+    margin-left:50px;
+    margin-top:350px;
+}
+#section4 .description{
+    font-size:2.5em;
+    margin-left:100px;
+    margin-top:200px;
+    width:600px;
+}
