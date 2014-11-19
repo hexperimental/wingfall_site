@@ -1,9 +1,27 @@
-body{
-    font-family:Helvetica;
-background-color:rgb(60, 164, 188);
+
+html, body, div, span, p, a, del, em, img, ol, ul, li, fieldset, form, label {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
+
+body{
+    text-shadow: -1px -1px 0px rgb(0,52,100),
+                 -1px  1px 0px rgb(0,52,100),
+                  1px -1px 0px rgb(0,52,100),
+                  1px  1px 0px rgb(0,52,100);
+    font-family: 'Montserrat', sans-serif;
+    background-color:rgb(60, 164, 188);
+	background-attachment:fixed;
+}
+
+
+.skrollr-desktop #scrollbar {display:none;}
+
 #stage{
-    height:3000px;
 }
 #dude{
     width:200px;
@@ -28,6 +46,17 @@ background-color:rgb(60, 164, 188);
     bottom:30px;
     right:30px;
 }
+#footer a,
+#footer a:link,
+#footer a:visited,
+#footer a:hover,
+#footer a:active {
+    color: white;
+    text-decoration:none;
+    font-size:.5em;
+    text-transform: uppercase;
+}
+
 #footer{
     height:100px;
     width:100%;
@@ -36,15 +65,16 @@ background-color:rgb(60, 164, 188);
 }
 #footer div{
     text-align:center;
-width:250px;
+    width:250px;
     display:block;
- margin:auto auto;
+    margin:auto auto;
+    margin-top:15px;
 }
 
 .section{
-    border:1px solid rgb(60, 164, 188);
+    border:1px solid rgba(60, 164, 188,0);
     height:600px;
-    color:white;
+    color:#eeeeee;
 }
 .footer-logo{
     display:block;
@@ -58,21 +88,25 @@ width:250px;
     margin-top:300px;
     margin-left:400px;
 }
-#section1 .caption{}
+#section2 .caption{
+margin-top:250px;
+margin-left:250px;
+}
 
 #section2 .description{
-    font-size:3.2em;
-    margin-top:150px;
-    margin-left:500px;
+    font-size:3.0em;
+    margin-top:350px;
+    float:right;
+    width:660px;
 }
 
 #section2 .sub{
     font-size:2.5em;
-    margin-top:250px;
+    margin-top:750px;
     margin-left:50px;
-    width:350px;
+    width:550px;
 }
-#section2 .caption{
+#section22 .caption{
     font-size:2.5em;
     margin-top:400px;
     float:right;
@@ -80,17 +114,56 @@ width:250px;
 }
 
 
-#section3 .sub{}
+#section3 .caption{
+   font-size:3.2em;
+   width:500px;
+   float:right;
+   margin-top:150px;
+}
+#section3 .sub{
+   width:500px;
+   margin-left:20px;
+   margin-top:-50px;
+}
+
 
 #section3 .description{
     font-size:2.5em;
-    width:500px;
+    width:700px;
     margin-left:50px;
-    margin-top:350px;
+    margin-top:750px;
 }
 #section4 .description{
     font-size:2.5em;
-    margin-left:100px;
-    margin-top:200px;
+    margin-left:300px;
+    margin-top:600px;
     width:600px;
+}
+#scrollbar {
+	position:fixed;
+	right:2px;
+	height:50px;
+	width:6px;
+	background:#444;
+	background:rgba(0,0,0,0.6);
+	border:1px solid rgba(255,255,255,0.6);
+	z-index:300;
+	border-radius:3px;
+}
+#bg1, #bg2, #bg3 {
+	z-index:-500;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+#bg1 {
+	z-index:-511;
+	background-image:url(./img/cloud2-shadow.png);
+}
+
+#bg3 {
+	z-index:-498;
+	background-image:url(./img/cloud3-shadow.png);
 }

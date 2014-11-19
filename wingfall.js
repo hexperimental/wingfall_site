@@ -1,8 +1,7 @@
 $( document ).ready(function() {
     var lastScrollTop = 0;
     var rotation =0;
-    window.onscroll = function (event) {
-
+   $(document).on( 'scroll', window, function(){
         var $w = $(this),
         scroll_top = $w.scrollTop(),
         total_height = $("body").height(),
@@ -26,8 +25,7 @@ $( document ).ready(function() {
         $("#dude").rotate(rotation)
         $("#dude").css('left',posX+'%')
         lastScrollTop = scroll_top;
-    }
-
+    });
 });
 jQuery.fn.rotate = function(degrees) {
     $(this).css({'-webkit-transform' : 'rotate('+ degrees +'deg)',
